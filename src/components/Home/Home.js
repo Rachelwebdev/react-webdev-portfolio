@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.scss';
 import LogoTitle from '../../assets/images/logo-s.png';
+import Logo from './Logo/Logo';
 
 function Home() {
   return (
@@ -12,15 +13,16 @@ function Home() {
           <br />
           I&rsquo;m
           <img src={LogoTitle} alt="developer" />
-          lobadan
+          achel
           <br />
-          web developer
+          software developer
         </h1>
-        <h2>Frontend Developer / React Expert</h2>
+        <h2>Frontend Developer / Reactjs / Ruby on Rails</h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   );
 }
