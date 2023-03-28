@@ -1,7 +1,9 @@
 .home-page {
+  position: relative;
+
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 50%;
     transform: translateY(-50%);
     width: 40%;
@@ -9,7 +11,7 @@
   }
 
   h1 {
-    color: #fff;
+    color: #36b37e;
     font-size: 53px;
     margin: 0;
     font-family: 'Coolvetica', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -18,20 +20,22 @@
     &::before {
       content: '<h1>';
       font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
+      color: #36b37e;
       font-size: 18px;
+      font-weight: 600;
       position: absolute;
-      margin-top: -40px;
-      left: -15px;
+      margin-top: -20px;
+      left: -40px;
       opacity: 0.6;
     }
 
     &::after {
       content: '</h1>';
       font-family: 'La Belle Aurore', cursive;
-      color: #ffd700;
+      color: #36b37e;
       font-size: 18px;
       position: absolute;
+      font-weight: 600;
       margin-top: 18px;
       margin-left: 20px;
       animation: fadeIn 1s 1.7s backwards;
@@ -48,32 +52,49 @@
   }
 
   h2 {
-    color: #8d8d8d;
+    color: #172b4d;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 1.3rem;
     font-family: sans-serif;
     letter-spacing: 3px;
+    line-height: 1.8rem;
     animation: fadeIn 1s 1.8s backwards;
   }
 
   .flat-button {
-    color: #ffd700;
+    color: #36b37e;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid #ffd700;
+    border: 1px solid #36b37e;
     margin-top: 25px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
 
     &:hover {
-      background: #ffd700;
-      color: #333;
+      background: #36b37e;
+      color: #fff;
+      font-weight: 700;
     }
+  }
+
+  .header-illustration {
+    width: 450px;
+    height: 550px;
+    position: absolute;
+    left: 63%;
+  }
+
+  .profile-picture {
+    width: 20%;
+    border-radius: 100%;
+    position: absolute;
+    left: 69%;
+    top: 24%;
   }
 }
