@@ -5,6 +5,7 @@ import './App.scss';
 import Layout from './components/Layout/Layout';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import Project from './components/Project/Project';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Layout />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/project" element={<Project />} />
       </Routes>
     </>
   );
