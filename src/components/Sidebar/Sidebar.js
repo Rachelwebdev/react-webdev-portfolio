@@ -33,7 +33,7 @@ function Sidebar() {
         <NavLink
           activeclassname="active"
           className="portfolio-link"
-          to="/project"
+          to="/projects"
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>

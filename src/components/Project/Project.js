@@ -1,29 +1,51 @@
 import React from 'react';
-import Loader from 'react-loaders';
+import PropTypes from 'prop-types';
+import { CgBrowser } from 'react-icons/cg';
+import { BiCodeBlock } from 'react-icons/bi';
 import './Project.scss';
-import Sidebar from '../Sidebar/Sidebar';
-import bookstore from '../../assets/images/project/bookstore.png';
-import mathMagician from '../../assets/images/project/calculator.png';
-import cinemy from '../../assets/images/project/cinemy.png';
-import crypto from '../../assets/images/project/crypto.png';
-import dropdown from '../../assets/images/project/dropdown.png';
-import leaderboard from '../../assets/images/project/leaderboard.png';
-import surpriseKitchen from '../../assets/images/project/suprisekitchen.png';
-import ultrawave from '../../assets/images/project/ultrawave.png';
-import worldChef from '../../assets/images/project/worldchef.jpg';
 
-function Project() {
+function Project({ projects }) {
   return (
     <>
-      <Sidebar />
-      <div className="container project-page">
-        <div className="text-zone">
-          <h1>Recent works</h1>
-        </div>
-      </div>
-      <Loader type="pacman" />
+      {projects.map((project) => {
+        const {
+          id, name, image, description, liveLink, sourceCode,
+        } = project;
+        return (
+          <div key={id} className="project-card">
+            <img className="project-image" src={image} alt="project" />
+            <h3 className="project-title">{name}</h3>
+            <p className="description">{description}</p>
+            <div className="buttons">
+              <a href={sourceCode} className="project-btn" type="button">
+                <span> Source</span>
+                <span>
+                  <BiCodeBlock />
+                </span>
+              </a>
+              <a href={liveLink} className="project-btn" type="button">
+                Live
+                <CgBrowser />
+              </a>
+            </div>
+          </div>
+        );
+      })}
     </>
   );
 }
+
+Project.propTypes = {
+  projects: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      liveLink: PropTypes.string.isRequired,
+      sourceCode: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+};
 
 export default Project;

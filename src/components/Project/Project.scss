@@ -1,46 +1,65 @@
-.project-page {
-  .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    margin-left: 4rem;
-    transform: translateY(-50%);
-    width: 35%;
-    vertical-align: middle;
-    display: table-cell;
-    max-height: 90%;
+.project-card {
+  margin: 3rem 5rem 3rem 0;
+  width: 250px;
+  color: #fff;
+  background-color: #000;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
 
-    h1 {
-      font-size: 53px;
-      font-family: 'Coolvetica', sans-serif;
-      color: #36b37e;
-      font-weight: 400;
-      margin-top: 8rem;
-      position: relative;
-      left: 10px;
-
-      &::before {
-        content: '<h1>';
-        font-family: 'La Belle Aurore', sans-serif;
-        font-size: 25px;
-        position: absolute;
-        margin-top: -5px;
-        left: -10px;
-        opacity: 0.5;
-        line-height: 18px;
-      }
-
-      &::after {
-        content: '</h1>';
-        font-family: 'La Belle Aurore', sans-serif;
-        font-size: 25px;
-        line-height: 18px;
-        position: absolute;
-        left: -30px;
-        bottom: -20px;
-        margin-left: 20px;
-        opacity: 0.6;
-      }
-    }
+  .project-image {
+    width: 220px;
+    height: 150px;
+    border: 2px solid #fff;
+    border-radius: 10px;
   }
+
+  .project-title,
+  .description {
+    font-family: 'Helvetica', sans-serif;
+  }
+
+  .project-title {
+    font-size: 25px;
+    color: #36b37e;
+    font-family: 'Coolvetica', sans-serif;
+  }
+
+  .description {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  .project-btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 15px;
+    column-gap: 2rem;
+    cursor: pointer;
+    color: #36b37e;
+    border: 1px solid #36b37e;
+    border-radius: 4px;
+    transition: all 500ms ease-in-out;
+  }
+
+  .project-btn:hover {
+    background-color: #36b37e;
+    color: #fff;
+    padding: 8px 12px;
+    font-weight: 600;
+  }
+}
+
+.project-card:hover {
+  cursor: pointer;
+  padding: 3.5rem;
 }
