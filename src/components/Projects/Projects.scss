@@ -49,6 +49,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.button,
 button {
   color: #36b37e;
   border: 1px solid #36b37e;
@@ -58,9 +59,11 @@ button {
   background-color: #fff;
   cursor: pointer;
   transition: all 500ms ease-in-out;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
-button:hover {
+.button:hover {
   background-color: #36b37e;
   color: #fff;
   padding: 10px 15px;

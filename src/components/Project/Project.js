@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { CgBrowser } from 'react-icons/cg';
 import { BiCodeBlock } from 'react-icons/bi';
 import './Project.scss';
 
 function Project({ projects }) {
+  const [readMore, setReadMore] = useState(false);
+
   return (
     <>
       {projects.map((project) => {
         const {
           id, name, image, description, liveLink, sourceCode,
         } = project;
+
         return (
           <div key={id} className="project-card">
             <img className="project-image" src={image} alt="project" />
             <h3 className="project-title">{name}</h3>
-            <p className="description">{description}</p>
+            <p className="description">
+              {readMore ? description : `${description.substring(0, 200)}...`}
+              <button type="button" onClick={() => setReadMore(!readMore)}>
+                {readMore ? 'show less' : 'read more'}
+              </button>
+            </p>
             <div className="buttons">
               <a href={sourceCode} className="project-btn" type="button">
                 <span> Source</span>

@@ -22,7 +22,12 @@ function Projects() {
           <div className="project-container">
             <Project projects={projects} />
           </div>
-          <Link to="contact" type="button" onClick={() => handleClick()}>
+          <Link
+            className="button"
+            to="/contact"
+            type="button"
+            onClick={() => handleClick()}
+          >
             Let`s have a chat
           </Link>
         </div>
