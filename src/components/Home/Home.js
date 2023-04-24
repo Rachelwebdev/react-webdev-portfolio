@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Loader from 'react-loaders';
 import './Home.scss';
-import headerIllustration from '../../assets/images/header-image.png';
-import profilePicture from '../../assets/images/rachel.img.jpg';
+// import headerIllustration from '../../assets/images/header-image.png';
+// import profilePicture from '../../assets/images/rachel.img.jpg';
 
 function Home() {
   return (
@@ -27,12 +27,14 @@ function Home() {
             CONTACT ME
           </Link>
         </div>
-        <img
-          src={headerIllustration}
-          alt="header illustration"
-          className="header-illustration"
-        />
-        <img src={profilePicture} alt="Rachel" className="profile-picture" />
+        {/* <div className="image">
+          <img
+            src={headerIllustration}
+            alt="header illustration"
+            className="header-illustration"
+          />
+          <img src={profilePicture} alt="Rachel" className="profile-picture" />
+        </div> */}
       </div>
       <Loader type="pacman" />
     </>

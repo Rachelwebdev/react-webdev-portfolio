@@ -2,13 +2,13 @@
   .text-zone {
     position: absolute;
     left: 10%;
-    top: 10%;
+    top: -10%;
     margin-left: 4rem;
-    transform: translateY(-50%);
-    width: 35%;
-    vertical-align: middle;
-    display: table-cell;
-    max-height: 90%;
+    // transform: translateY(-50%);
+    // width: 35%;
+    // vertical-align: middle;
+    // display: table-cell;
+    // max-height: 90%;
 
     h1 {
       font-size: 53px;
@@ -60,7 +60,7 @@
   position: absolute;
   top: 28%;
   left: 10%;
-  max-width: 80%;
+  width: 100%;
 
   p {
     font-size: 2rem;
@@ -162,5 +162,63 @@
 
   83% {
     transform: rotateX(90deg);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .text-zone {
+    position: absolute;
+    left: 20%;
+    top: 60%;
+    margin-left: 8rem;
+  }
+
+  .stage-cube-cont {
+    // display: none;
+    width: 100%;
+    height: 60%;
+    top: -25%;
+    padding-top: 18%;
+    margin-left: 0;
+    left: 20%;
+  }
+
+  .paragraph-about {
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    width: 120%;
+  }
+
+  h1::before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    margin-top: -5px;
+    left: -12px;
+  }
+
+  h1::after {
+    content: '</h1>';
+    line-height: 18px;
+    position: absolute;
+    left: -30px;
+    bottom: -20px;
+    margin-left: 20px;
+    opacity: 0.6;
+  }
+
+  div {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-page {
+    .text-zone {
+      // top: 20%;
+    }
   }
 }

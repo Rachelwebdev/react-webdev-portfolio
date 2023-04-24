@@ -38,3 +38,24 @@
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .bottom-tags {
+    bottom: -180px;
+    top: auto;
+    left: 80px;
+    // display: none;
+  }
+
+  .tags {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bottom-tags {
+    bottom: -100px;
+    top: auto;
+    left: 80px;
+  }
+}
