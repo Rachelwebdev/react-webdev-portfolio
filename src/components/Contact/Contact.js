@@ -5,7 +5,7 @@ import {
 } from 'react-leaflet';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import Sidebar from '../Sidebar/Sidebar';
+// import Sidebar from '../Sidebar/Sidebar';
 
 function Contact() {
   const form = useRef();
@@ -35,7 +35,7 @@ function Contact() {
 
   return (
     <>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className="container contact-page">
         <div className="text-zone">
           <h1>Contact me</h1>
@@ -83,19 +83,39 @@ function Contact() {
             </form>
           </div>
         </div>
-        <div className="info-map">
+        {/* <div className="info-map">
           Rachel Isaac,
           <br />
           Dubai, UAE
           <br />
           <span className="my-email">rachelisaac995@gmail.com</span>
-        </div>
+        </div> */}
         <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[44.96366, 19.61045]}>
-              <Popup>Rachel lives here, come over for a cup of coffee :)</Popup>
+          <MapContainer
+            center={[51.505, -0.09]}
+            zoom={13}
+            scrollWheelZoom={false}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[51.505, -0.09]}>
+              <Popup>
+                Wanna have a virtual coffee?
+                {' '}
+                <br />
+                {' '}
+                Send me an email.
+              </Popup>
             </Marker>
+            <div className="info-map">
+              Rachel Isaac,
+              <br />
+              Dubai, UAE
+              <br />
+              <span className="my-email">rachelisaac995@gmail.com</span>
+            </div>
           </MapContainer>
         </div>
       </div>

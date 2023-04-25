@@ -11,12 +11,12 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Sidebar from '../Sidebar/Sidebar';
+// import Sidebar from '../Sidebar/Sidebar';
 
 function About() {
   return (
     <>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className="container about-page">
         <div className="left-container">
           <div className="text-zone">

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Loader from 'react-loaders';
 import './Projects.scss';
 import { Link } from 'react-router-dom';
-import Sidebar from '../Sidebar/Sidebar';
+// import Sidebar from '../Sidebar/Sidebar';
 import data from '../data';
 import Project from '../Project/Project';
 
@@ -15,7 +15,7 @@ function Projects() {
   };
   return (
     <>
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className="container project-page">
         <div className="text-zone">
           <h1>Recent works</h1>

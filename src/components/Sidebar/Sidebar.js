@@ -6,12 +6,12 @@ import {
   faHome,
   faUser,
   faEnvelope,
-  faFileDownload,
+  // faFileDownload,
   faSuitcase,
   // faBars,
   // faClose,
 } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import LogoS from '../../assets/images/logo-s.png';
 
 function Sidebar() {
@@ -64,7 +64,7 @@ function Sidebar() {
           size="3x"
           className="close-icon"
         /> */}
-        <ul>
+        {/* <ul>
           <li>
             <a
               target="_blank"
@@ -107,7 +107,7 @@ function Sidebar() {
               />
             </a>
           </li>
-        </ul>
+        </ul> */}
         {/* <FontAwesomeIcon
           onClick={() => setShowNav(true)}
           icon={faBars}
