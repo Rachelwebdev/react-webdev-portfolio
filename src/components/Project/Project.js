@@ -1,42 +1,48 @@
-import React, { useState } from 'react';
+/* eslint-disable */
+import React from 'react';
 import PropTypes from 'prop-types';
-import { CgBrowser } from 'react-icons/cg';
-import { BiCodeBlock } from 'react-icons/bi';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+// import { CgBrowser } from 'react-icons/cg';
+// import { BiCodeBlock } from 'react-icons/bi';
 import './Project.scss';
 
 function Project({ projects }) {
-  const [readMore, setReadMore] = useState(false);
-
   return (
     <>
       {projects.map((project) => {
-        const {
-          id, name, image, description, liveLink, sourceCode,
-        } = project;
+        const { id, name, image, liveLink, sourceCode } = project;
 
         return (
-          <div key={id} className="project-card">
-            <img className="project-image" src={image} alt="project" />
-            <h3 className="project-title">{name}</h3>
-            <p className="description">
-              {readMore ? description : `${description.substring(0, 200)}...`}
-              <button type="button" onClick={() => setReadMore(!readMore)}>
-                {readMore ? 'show less' : 'read more'}
-              </button>
-            </p>
-            <div className="buttons">
-              <a href={sourceCode} className="project-btn" type="button">
-                <span> Source</span>
-                <span>
-                  <BiCodeBlock />
-                </span>
-              </a>
-              <a href={liveLink} className="project-btn" type="button">
+          <Card key={id} sx={{ maxWidth: 345 }} className="project-card">
+            <CardMedia
+              className="project-image"
+              component="img"
+              alt="green iguana"
+              height="140"
+              image={image}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {/* {miniDescription} */}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button href={sourceCode} size="small">
+                Source
+              </Button>
+              <Button href={liveLink} size="small">
                 Live
-                <CgBrowser />
-              </a>
-            </div>
-          </div>
+              </Button>
+            </CardActions>
+          </Card>
         );
       })}
     </>
@@ -52,7 +58,7 @@ Project.propTypes = {
       description: PropTypes.string.isRequired,
       liveLink: PropTypes.string.isRequired,
       sourceCode: PropTypes.string.isRequired,
-    }),
+    })
   ).isRequired,
 };
 

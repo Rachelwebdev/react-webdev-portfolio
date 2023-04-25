@@ -1,16 +1,18 @@
 .project-card {
   margin: 3rem 5rem 3rem 0;
-  width: 250px;
-  color: #fff;
-  background-color: #000;
-  padding: 3rem;
+  // width: 250px;
+  color: #000;
+  // background-color: #000;
+  // border: 1px solid #000;
+  // padding: 3rem;
   text-align: center;
-  border-radius: 10px;
-  transition: all 500ms ease-in-out;
+  border-radius: 15px;
+  padding: 2rem;
+  // transition: all 500ms ease-in-out;
 
   .project-image {
-    width: 220px;
-    height: 150px;
+    // width: 100%;
+    // height: 200px;
     border: 2px solid #fff;
     border-radius: 10px;
   }
@@ -59,7 +61,7 @@
   }
 }
 
-.project-card:hover {
-  cursor: pointer;
-  padding: 3.5rem;
-}
+// .project-card:hover {
+//   cursor: pointer;
+//   padding: 3.5rem;
+// }

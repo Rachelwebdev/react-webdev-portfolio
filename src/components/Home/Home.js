@@ -17,12 +17,14 @@ function Home() {
             <br />
             <span>a software developer</span>
           </h1>
-          <h2>Full-Stack Web Developer. JavaScript | Rails | React | Redux.</h2>
-          <h2>
+          <h2 className="h2-heading">
+            Full-Stack Web Developer. JavaScript | Rails | React | Redux.
+          </h2>
+          <h3>
             I can help you build a product, feature or website. Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don&rsquo;t hestiate to contact me.
-          </h2>
+          </h3>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

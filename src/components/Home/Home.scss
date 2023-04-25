@@ -1,6 +1,6 @@
 .home-page {
   .text-zone {
-    margin: 5rem 0 0 6rem;
+    // margin: 3rem 0 0 6rem;
     // position: absolute;
     // left: 15%;
     // top: 50%;
@@ -36,8 +36,9 @@
       font-size: 18px;
       position: absolute;
       font-weight: 600;
-      margin-top: 18px;
-      margin-left: 20px;
+      // margin-top: 18px;
+      // margin-left: 20px;
+      margin: 18px 0 0 20px;
       animation: fadeIn 1s 1.7s backwards;
     }
 
@@ -52,6 +53,18 @@
   }
 
   h2 {
+    color: #172b4d;
+    margin-top: 60px;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    line-height: 2.5rem;
+    animation: fadeIn 1s 1.8s backwards;
+    width: 60%;
+  }
+
+  h3 {
     color: #172b4d;
     margin-top: 20px;
     font-weight: 400;
@@ -84,22 +97,22 @@
     }
   }
 
-  .header-illustration {
-    width: 450px;
-    height: 550px;
-    position: absolute;
-    top: -10%;
-    opacity: 0.8;
-    left: 63%;
-  }
+  // .header-illustration {
+  //   width: 450px;
+  //   height: 550px;
+  //   position: absolute;
+  //   top: -10%;
+  //   opacity: 0.8;
+  //   left: 63%;
+  // }
 
-  .profile-picture {
-    width: 20%;
-    border-radius: 100%;
-    position: absolute;
-    left: 80%;
-    top: 13%;
-  }
+  // .profile-picture {
+  //   width: 20%;
+  //   border-radius: 100%;
+  //   position: absolute;
+  //   left: 80%;
+  //   top: 13%;
+  // }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {

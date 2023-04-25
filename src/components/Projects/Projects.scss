@@ -1,13 +1,13 @@
 .project-page {
   .text-zone {
-    position: absolute;
-    left: 8%;
-    top: 35%;
-    margin-left: 2rem;
-    transform: translateY(-50%);
-    vertical-align: middle;
-    display: table-cell;
-    max-height: 90%;
+    // position: absolute;
+    // left: 8%;
+    // top: 35%;
+    // margin-left: 2rem;
+    // transform: translateY(-50%);
+    // vertical-align: middle;
+    // display: table-cell;
+    // max-height: 90%;
 
     h1 {
       font-size: 53px;
@@ -17,6 +17,7 @@
       margin: 8rem 0 5rem;
       position: relative;
       left: 10px;
+      // text-align: center;
 
       &::before {
         content: '<h1>';

@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import Loader from 'react-loaders';
 import './Projects.scss';
 import { Link } from 'react-router-dom';
-// import Sidebar from '../Sidebar/Sidebar';
 import data from '../data';
 import Project from '../Project/Project';
 
 function Projects() {
   const [projects, setProjects] = useState(data);
-  console.log(projects);
 
   const handleClick = () => {
     setProjects([]);
