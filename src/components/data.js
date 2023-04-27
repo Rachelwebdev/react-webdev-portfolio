@@ -10,7 +10,7 @@ import worldChef from '../assets/images/project/worldchef.jpg';
 
 export default [
   {
-    id: 9,
+    id: 1,
     name: 'WORLD CHEF SUMMIT',
     image: worldChef,
     miniDescription:
@@ -21,7 +21,7 @@ export default [
     sourceCode: 'https://github.com/Rachelwebdev/World-Chef-Capstone-project',
   },
   {
-    id: 8,
+    id: 2,
     name: 'ULTRAWAVE',
     image: ultrawave,
     miniDescription:
@@ -32,7 +32,7 @@ export default [
     sourceCode: 'https://github.com/Rachelwebdev/Ultrawave-website',
   },
   {
-    id: 4,
+    id: 3,
     name: 'DROPDOWN MENU',
     image: dropdown,
     miniDescription:
@@ -43,18 +43,18 @@ export default [
     sourceCode: 'https://github.com/Rachelwebdev/Dropdown-Navigation',
   },
   {
-    id: 2,
+    id: 4,
     name: 'CINEMY',
     image: cinemy,
     miniDescription:
-      'Cinemy was designed to fetch movies from a movie database and render the fetched data on the web page. A powerful and versatile project that demonstrates my skills in working with APIs, using fetch requests, and creating engaging user interfaces using the React framework.',
+      'Cinemy was designed to fetch movies from a movie database and render the fetched data on the web page. Demonstrates my skills in working with APIs, using fetch requests, and creating engaging user interfaces using the React framework.',
     description:
       ' One of the key features of this project is its ability to fetch and process large amounts of data quickly and efficiently, thanks to the use of fetch requests and other advanced front-end technologies. The React framework enables the website to update and re-render the page in real time as users interact with it, providing a seamless and responsive user experience.',
     liveLink: 'http://cinemy-chi.vercel.app/',
     sourceCode: 'https://github.com/Rachelwebdev/Cinemy',
   },
   {
-    id: 1,
+    id: 5,
     name: 'BOOKSTORE CMS',
     image: bookstore,
     miniDescription:
@@ -66,7 +66,7 @@ export default [
   },
 
   {
-    id: 5,
+    id: 6,
     name: 'MATH MAGICIANS',
     image: mathMagician,
     miniDescription:
@@ -89,11 +89,11 @@ export default [
     sourceCode: 'https://github.com/Rachelwebdev/Surprise-Kitchen-app',
   },
   {
-    id: 6,
+    id: 8,
     name: 'LEADERBOARD',
     image: leaderboard,
     miniDescription:
-      'This project was designed to allow users to enter their names and game scores into a form, which is then sent to a Leaderboard API service using a post method.',
+      'An application designed to allow users to enter their names and game scores into a form, which is then sent to a Leaderboard API service using a post method.',
     description:
       'The leaderboard project in my portfolio is a minimalist and highly functional web application that demonstrates my skills in working with APIs, managing data, and using advanced front-end technologies. Once the data is received by the API service, it is stored and can be accessed using a get method, allowing the application to retrieve and display the current leaderboard rankings in real-time.  One of the key features of this project is its ability to manage data in a dynamic and efficient manner, thanks to the use of advanced front-end technologies like Axios and asynchronous JavaScript.',
     liveLink: 'https://rachelwebdev.github.io/Leaderboard-project/dist/',
