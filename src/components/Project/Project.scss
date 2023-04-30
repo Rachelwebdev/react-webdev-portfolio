@@ -1,0 +1,43 @@
+.project-card {
+  margin: 3rem 5rem 3rem 0;
+  color: #000;
+  text-align: center;
+  border-radius: 15px;
+  padding: 2rem;
+
+  .project-image {
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+
+  .project-title {
+    font-size: 20px;
+    color: #36b37e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+  }
+
+  .readMore {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+    color: #36b37e;
+  }
+
+  .project-btn {
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #36b37e;
+    border: 1px solid #36b37e;
+    border-radius: 4px;
+    transition: all 500ms ease-in-out;
+  }
+
+  .project-btn:hover {
+    background-color: #36b37e;
+    color: #fff;
+    padding: 8px 12px;
+    font-weight: 600;
+  }
+}
