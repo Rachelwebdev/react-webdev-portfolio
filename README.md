@@ -51,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo]()
+- [Live Demo](https://portfolio-by-rachel-isaac.netlify.app/)
 - [Live Video]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

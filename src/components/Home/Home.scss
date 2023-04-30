@@ -108,13 +108,7 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  h1 {
-    width: 100%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .image {
     display: none;
   }
@@ -134,11 +128,5 @@
   h1::before,
   h1::after {
     display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .h3-text {
-    width: 100%;
   }
 }
