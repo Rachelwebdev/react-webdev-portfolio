@@ -16,16 +16,8 @@ import { Link } from 'react-router-dom';
 import Rachel from '../../assets/images/rachel.img.jpg';
 import LogoS from '../../assets/images/logo-s.png';
 import './Navbar.scss';
-// import AdbIcon from '@mui/icons-material/Adb';
-// import {
-//   faHome,
-//   faUser,
-//   faEnvelope,
-//   faSuitcase,
-// } from '@fortawesome/free-solid-svg-icons';
 
 const pages = ['HOME', 'ABOUT', 'PROJECTS', 'CONTACT'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -50,7 +42,6 @@ function Navbar() {
     <AppBar position="static">
       <Container maxWidth="xl" className="navBar">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -113,24 +104,7 @@ function Navbar() {
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-          {/* <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          ></Typography> */}
-          {/* DESKTOP */}
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -147,10 +121,14 @@ function Navbar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip title="My Online Profiles">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Stack direction="row" className="avatar">
-                  <Avatar alt="Remy Sharp" src={Rachel} />
+                  <Avatar
+                    alt="Remy Sharp"
+                    src={Rachel}
+                    className="profile-pic"
+                  />
                 </Stack>
               </IconButton>
             </Tooltip>
@@ -170,11 +148,17 @@ function Navbar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem
+                onClick={handleCloseUserMenu}
+                className="online-profiles"
+              >
+                <a href="https://github.com/Rachelwebdev">Github</a>
+                <a href="https://www.linkedin.com/in/rachelisaac13/">
+                  Linkedin
+                </a>
+                <a href="https://wellfound.com/u/rachelisaac13">Angellist</a>
+                <a href="https://bit.ly/3oUt416">Resume</a>
+              </MenuItem>
             </Menu>
           </Box>
         </Toolbar>

@@ -44,6 +44,34 @@
     width: 70px;
     height: 50px;
   }
+
+  .profile-pic {
+    transition: all 1000ms ease-out;
+  }
+
+  .profile-pic:hover {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.online-profiles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  a {
+    text-decoration: none;
+    color: #36b37e;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: all 1000ms ease-out;
+  }
+
+  a:hover {
+    color: black;
+    font-size: 2rem;
+  }
 }
 
 .mobile-nav-links {

@@ -11,12 +11,14 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import Sidebar from '../Sidebar/Sidebar';
+import { BsGithub } from 'react-icons/bs';
+import { FaAngellist } from 'react-icons/fa';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { CgFileDocument } from 'react-icons/cg';
 
 function About() {
   return (
     <>
-      {/* <Sidebar /> */}
       <div className="container about-page">
         <div className="left-container">
           <div className="text-zone">
@@ -39,29 +41,53 @@ function About() {
               valuable asset to any team.
             </p>
           </div>
+          <div className="online-links">
+            <a href="https://github.com/Rachelwebdev">
+              Github
+              <span>
+                <BsGithub />
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/rachelisaac13/">
+              Linkedin
+              <span>
+                <AiOutlineLinkedin />
+              </span>
+            </a>
+            <a href="https://wellfound.com/u/rachelisaac13">
+              Angellist
+              <span>
+                <FaAngellist />
+              </span>
+            </a>
+            <a href="https://bit.ly/3oUt416">
+              Resume
+              <span>
+                <CgFileDocument />
+              </span>
+            </a>
+          </div>
         </div>
 
-        <div className="right-container">
-          <div className="stage-cube-cont">
-            <div className="cubespinner">
-              <div className="face1">
-                <FontAwesomeIcon icon={faAngular} color="#DD0031" />
-              </div>
-              <div className="face2">
-                <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-              </div>
-              <div className="face3">
-                <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-              </div>
-              <div className="face4">
-                <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-              </div>
-              <div className="face5">
-                <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-              </div>
-              <div className="face6">
-                <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-              </div>
+        <div className="stage-cube-cont">
+          <div className="cubespinner">
+            <div className="face1">
+              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+            </div>
+            <div className="face2">
+              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+            </div>
+            <div className="face3">
+              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+            </div>
+            <div className="face4">
+              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+            </div>
+            <div className="face6">
+              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
           </div>
         </div>

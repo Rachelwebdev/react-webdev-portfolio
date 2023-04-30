@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Loader from 'react-loaders';
 import './Home.scss';
-// import headerIllustration from '../../assets/images/header-image.png';
-// import profilePicture from '../../assets/images/rachel.img.jpg';
+import headerIllustration from '../../assets/images/header-image.png';
+import profilePicture from '../../assets/images/rachel.img.jpg';
 
 function Home() {
   return (
@@ -20,7 +20,7 @@ function Home() {
           <h2 className="h2-heading">
             Full-Stack Web Developer. JavaScript | Rails | React | Redux.
           </h2>
-          <h3>
+          <h3 className="h3-text">
             I can help you build a product, feature or website. Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don&rsquo;t hestiate to contact me.
@@ -29,14 +29,14 @@ function Home() {
             CONTACT ME
           </Link>
         </div>
-        {/* <div className="image">
+        <div className="image">
           <img
             src={headerIllustration}
             alt="header illustration"
             className="header-illustration"
           />
           <img src={profilePicture} alt="Rachel" className="profile-picture" />
-        </div> */}
+        </div>
       </div>
       <Loader type="pacman" />
     </>

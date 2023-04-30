@@ -5,14 +5,9 @@
 
   .text-zone {
     margin-left: 4rem;
-    // position: absolute;
-    // left: 10%;
-    // top: 35%;
-    // transform: translateY(-50%);
     width: 100%;
     vertical-align: middle;
     display: table-cell;
-    // max-height: 90%;
 
     h1 {
       font-size: 53px;
@@ -133,11 +128,9 @@
 .map-wrap {
   background: rgba(8, 253, 216, 0.1);
   float: right;
-  width: 800px;
+  width: 80%;
   height: 470px;
   margin: 6rem 6rem 0 0;
-  // width: 50%;
-  // margin-top: 6rem;
 }
 
 .leaflet-container {
@@ -156,11 +149,8 @@
   right: 26%;
   z-index: 999999;
   padding: 1rem;
-  // width: 15%;
-  // padding: 15px;
   color: #fff;
   font-family: 'Helvetica', sans-serif;
-  // font-size: 14px;
   font-weight: 300;
   opacity: 0;
   animation: fadeIn 1s 1.5s;
@@ -169,5 +159,16 @@
   span {
     font-size: 16px;
     color: #36b37e;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map-wrap {
+    margin-bottom: 5rem;
   }
 }

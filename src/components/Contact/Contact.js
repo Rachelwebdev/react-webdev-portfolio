@@ -1,11 +1,9 @@
+/* eslint-disable */
 import Loader from 'react-loaders';
 import './Contact.scss';
-import {
-  MapContainer, TileLayer, Marker, Popup,
-} from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-// import Sidebar from '../Sidebar/Sidebar';
 
 function Contact() {
   const form = useRef();
@@ -18,7 +16,7 @@ function Contact() {
         'service_yz5xn5o',
         'template_sqvnelr',
         form.current,
-        'Ng4uAkBkngl1tFbTD',
+        'Ng4uAkBkngl1tFbTD'
       )
       .then(
         (result) => {
@@ -29,13 +27,12 @@ function Contact() {
         (error) => {
           console.log(error.text);
           alert('Message NOT sent');
-        },
+        }
       );
   };
 
   return (
     <>
-      {/* <Sidebar /> */}
       <div className="container contact-page">
         <div className="text-zone">
           <h1>Contact me</h1>
@@ -83,13 +80,7 @@ function Contact() {
             </form>
           </div>
         </div>
-        {/* <div className="info-map">
-          Rachel Isaac,
-          <br />
-          Dubai, UAE
-          <br />
-          <span className="my-email">rachelisaac995@gmail.com</span>
-        </div> */}
+
         <div className="map-wrap">
           <MapContainer
             center={[51.505, -0.09]}
@@ -102,11 +93,7 @@ function Contact() {
             />
             <Marker position={[51.505, -0.09]}>
               <Popup>
-                Wanna have a virtual coffee?
-                {' '}
-                <br />
-                {' '}
-                Send me an email.
+                Wanna have a virtual coffee? <br /> Send me an email.
               </Popup>
             </Marker>
             <div className="info-map">

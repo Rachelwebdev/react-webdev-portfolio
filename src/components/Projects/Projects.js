@@ -13,10 +13,9 @@ function Projects() {
   };
   return (
     <>
-      {/* <Sidebar /> */}
       <div className="container project-page">
         <div className="text-zone">
-          <h1>Recent works</h1>
+          <h1 className="h1-recent-works">Recent works</h1>
           <div className="project-container">
             <Project projects={projects} />
           </div>
